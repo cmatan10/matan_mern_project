@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 0px ;
+  padding-left: 0 0px;
+  box-shadow: 0 0 35px #eee;
+}
+a{
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+button{
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* ---------------- Header ------------ */
+@import url("./components/headers/header.css");
+
+/* ------------- Products -------------- */
+
+@import url("./components/mainpages/products/products.css");
+
+/* ---------------- Detail Product --------------- */
+@import url("./components/mainpages/detailProduct/detailProduct.css");
+
+/* ------------- Login/Register ----------------- */
+@import url("./components/mainpages/auth/login.css");
+
+/* ------------ Cart ------------------- */
+@import url("./components/mainpages/cart/cart.css");
+
+/* --------------- History ------------------- */
+@import url("./components/mainpages/history/history.css");
+
+/* ------------------ Categories ------------------ */
+@import url("./components/mainpages/categories/categories.css");
+
+/* ------------------- Create Product -------------- */
+@import url("./components/mainpages/createProduct/createProduct.css");
+
+/* ----------------- Responsive ------------------ */
+@media (max-height:800px){
+	footer { position: static; }
+
+}
+@media (max-width: 820px){
+  header .logo{
+    min-width: 115px;
+    flex: none;
+    font-size: small;
+    
+    
+  }
+
+
+.btn_cat{
+  font-size: 10px;
+  }
+header a.sub_text{
+  font-size: 0.9cm;
+}
+header img{
+  margin-right: 2px;
+}
+
+  header ul{
+   padding: 10px 0;
+  }
+}
+@media (max-width: 720px){
+  header ul{
+   position: fixed;
+   top:0;
+   left: -100%;
+   width: 100%;
+   height: 100vh;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   opacity: 0.98;
+   z-index: 99;
+   transition: 0.5s ease-in;
+   
+  }
+  header .menu{
+    display: block;
+    cursor: pointer;
+    
+  }
+  
+  .paypal_button{
+    margin-top:'170px'; 
+    padding-right:'700px'; 
+
+ 
+  }
+  
+  header ul li .menu{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    
+  }
+  header{
+    justify-content: space-between;
+  }
+  
+}
+
+/* @media (max-width: 570px){
+  .filter_menu .row span{
+    display: none;
+  }
+} */
+
+@media (max-width: 500px){
+  .App{
+    padding: 0 0px;
+  }
+  .detail{
+    font-size: 100%;
+    padding: 0;
+  }
+  .filter_menu input{
+    margin: 0;
+  }
+  .filter_menu .sort{
+    flex: 1;
+  }
+  .filter_menu .sort select{
+    width: 100%;
+    min-width: 290px;
+    margin: 5px 0;
+  }
+  .login-page{
+    padding: 30px 15px;
+  }
+  .delete-all{
+    margin: 20px 0;
+  }
+  .create_product .upload{
+    margin: 20px 0;
+  }
+  .product_card{
+    max-width: 250px;
+    overflow: hidden;
+    height: 530px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 10px 0;
+  }
+  .product_card1{
+    max-width: 300px;
+    overflow: hidden;
+    height: 480px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 10px 0;
+    margin-left: 50px;
+    
+}
+
+
+}
+.home_text{
+  text-align: center;
+}
+.sub_text{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 70px;
+
+}
+.footer_text{
+  color: rgb(71, 71, 71);
+  
+}
+
+.paypal_button{
+  margin-top:'170px'; 
+  margin-left:'700px'; 
+  position:'flex';
+
+}
